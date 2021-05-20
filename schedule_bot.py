@@ -6,10 +6,10 @@ USERNAME = "***"
 PASSWORD = "***"
 DATES = ["10/5/2020","10/6/2020","10/7/2020","10/8/2020","10/9/2020"]
 HOURS = ["07:45 - 11:15","11:45 - 14:45","15:15 - 18:15"]
-HOME_URL = "https://atoz.amazon.work/time/extra"
-LOGIN_URL_SEGMENT = "https://idp.amazon.work/idp/profile/SAML2/"
-CHROME_PROFILE_DIRECTORY = "user-data-dir=/Users/ivan/AppData/Local/Google/Chrome/User Data/Default"
-CHROME_DRIVER_DIRECTORY = "C:\\WebDrivers\\chromedriver.exe"
+HOME_URL = ""
+LOGIN_URL_SEGMENT = ""
+CHROME_PROFILE_DIRECTORY = ""
+CHROME_DRIVER_DIRECTORY = ""
 DRIVER = None
 
 def main():
@@ -67,7 +67,7 @@ def login():
 
 def logout():
     # Click dropdown menu
-    DRIVER.find_element_by_partial_link_text("fitchi").click()
+    DRIVER.find_element_by_partial_link_text("").click()
     time.sleep(1)
 
     # Click log out
